@@ -54,3 +54,5 @@ group :development do
 end
 
 gem "sassc-rails"
+gem "bootstrap", "~> 5.2"
+gem "devise"
