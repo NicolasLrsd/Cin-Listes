@@ -1,9 +1,20 @@
-<nav class="navbar color-palet-black">
-  <div class="container-fluid">
-    <a class="navbar-brand justify-content-center" href="#">
-      <%= image_tag("logo_popcorn",alt: "logo", width: 50, height: 40, class: "d-inline-block align-text-top")%> 
-      <h4 class="color-palet-first-pink">CinéListes</h4>
-    </a>
-  </div>
-</nav>
+  <nav class="navbar color-palet-black">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <%= image_tag("logo_popcorn", alt: "logo", width: 60, height: 45, class: "d-inline-block") %> 
+        <h3 class="mb-0 color-palet-first-pink-text">CinéListes</h3>
+      </a>
+     <div class="dropdown">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/cveneziani", class: "avatar dropdown-toggle", id: "dropdownMenuAvatar", role: "button", data: { bs_toggle: "dropdown" }, aria: { haspopup: "true", expanded: "false" }, alt: "avatar" %>
+      <!-- MENU -->
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAvatar">
+        <li><a class="dropdown-item" href="#">Profil</a></li>
+        <li><a class="dropdown-item" href="#">Paramètres</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
    
